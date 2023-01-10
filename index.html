@@ -8,7 +8,7 @@
 				content="Donovan Kraeker">
 		<meta 	name = "description"
 				content="A Movie Theater WebVR virtual reality example website experience using A-Frame designed by Donovan Kraeker">
-		<script src = "https://aframe.io/releases/0.5.2/aframe.min.js"></script>
+		<script src = "https://aframe.io/releases/0.3.2/aframe.min.js"></script>
 	</head>
 
 	<body>
@@ -205,14 +205,19 @@
 	<!-- Other -->
 			<a-model
 				src = "models/sofa.dae"
-				scale = "1 1 1"
+				scale = "1.5 1.5 1.5"
 				position = "0 0.35 7.6"
 				rotation = "0 90 0">
 			</a-model>
 			<a-entity
-				geometry = " primitive: plane; height: 2; width: 1"
+				geometry = "primitive: plane;
+					    height: 2;
+					    width: 1"
 				position = "5 1.5 13.93"
-				material = "shader: flat; side: back; transparent: true; src: url(images/door.png)">
+				material = "shader: flat;
+					    side: back;
+					    transparent: true;
+					    src: url(images/door.png)">
 			</a-entity>
 			<a-entity
 				geometry = " primitive: plane; height: 0.5; width: 0.6"
