@@ -14,193 +14,252 @@
 	<body>
 		<a-scene>
 			<a-entity
-				camera position = "0 1.7 7.5"
+				camera position = "0 1 5"
 				look-controls = "enabled: true"
 				cursor-visible = "enabled: false"
 				wasd-controls = "enabled: true">
 			</a-entity>
 
-		<!-- Ceiling Floor -->
+		<!-- Floor -->
 			<a-entity
-				geometry = "primitive: plane; height: 24; width: 22"
+				geometry = "primitive: plane; depth: 0.1; height: 30; width: 25"
 				position = "0 0 0"
 				rotation = "-90 0 0"
 				material = "shader: flat; roughness: 1; src: url(images/floor.jpg)">
 			</a-entity>
+		<!-- Ceiling -->
 			<a-entity
-				geometry = "primitive: box; depth: 0.1; height: 24; width: 22"
-				position = "0 12 0"
+				geometry = "primitive: box; depth: 0.1; height: 30; width: 25"
+				position = "0 15 0"
 				rotation = "-90 0 0"
 				material = "shader: standard; side: bottom; src: url(images/stars.jpg)">
 			</a-entity>
 
-		<!-- Front Back Walls -->
-			<a-entity
-				geometry = "primitive: box; depth: 0.1; height: 12; width: 24"
-				position = "0 6 -10"
-				material = "shader: standard; color: #000">
-			</a-entity>
-			<a-entity
-				geometry = "primitive: box; depth: 0.1; height: 12; width: 24"
-				position = "0 6 14"
-				material = "shader: standard; color: #000">
-			</a-entity>
 
+		<!-- Front Walls -->
+			<a-entity
+				geometry = "primitive: box; depth: 0.1; height: 15; width: 25"
+				position = "0 7.5 -15"
+				material = "shader: standard; color: #000">
+			</a-entity>
+		<!-- Back Walls -->
+			<a-entity
+				geometry = "primitive: box; depth: 0.1; height: 15; width: 25"
+				position = "0 7.5 15"
+				material = "shader: standard; color: #000">
+			</a-entity>
 		<!-- Side Walls -->
 			<a-entity
-				geometry = "primitive: box; depth: 0.1; height: 12; width: 24"
-				position = "11 6 2"
+				geometry = "primitive: box; depth: 0.05; height: 15; width: 30"
+				position = "12.5 7.5 0"
 				rotation = "0 90 0"
 				material = "shader: standard; roughness: 1; src: url(images/wall.jpg)">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: box; depth: 0.1; height: 12; width: 24"
-				position = "-11 6 2"
+				geometry = "primitive: box; depth: 0.05; height: 15; width: 30"
+				position = "-12.5 7.5 0"
 				rotation = "0 90 0"
 				material = "shader: standard; roughness: 1; src: url(images/wall.jpg)">
 			</a-entity>
+
 
 		<!-- Molding -->
 			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 0.5; width: 24"
-				position = "-10.75 0 2"
+				geometry = "primitive: box; depth: 1.1; height: 1; width: 30.1"
+				position = "-12 .5 0"
 				rotation = "0 90 0"
 				material = "shader: standard; metalness: 0.5; color: #000">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 0.5; width: 24"
-				position = "10.75 0 2"
+				geometry = "primitive: box; depth: 1.1; height: 1; width: 30.1"
+				position = "12 .5 0"
 				rotation = "0 90 0"
 				material = "shader: standard; metalness: 0.5; color: #000">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 0.5; width: 24"
-				position = "-10.75 12 2"
+				geometry = "primitive: box; depth: 1.1; height: 1; width: 30.1"
+				position = "-12 14.5 0"
 				rotation = "0 90 0"
 				material = "shader: standard; metalness: 0.5; color: #000">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 0.5; width: 24"
-				position = "10.75 12 2"
+				geometry = "primitive: box; depth: 1.1; height: 1; width: 30.1"
+				position = "12 14.5 0"
 				rotation = "0 90 0"
 				material = "shader: standard; metalness: 0.5; color: #000">
 			</a-entity>
+
+			
+		<!-- Pillars Right -->
+			<a-entity
+				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
+				position = "12 7.5 -15"
+				rotation = "0 90 0"
+				material = "shader: standard; metalness: 0.5; color: #000">
+			</a-entity>
+			<a-entity
+				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
+				position = "12 7.5 -10"
+				rotation = "0 90 0"
+				material = "shader: standard; metalness: 0.5; color: #000">
+			</a-entity>
+			<a-entity
+				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
+				position = "12 7.5 -5"
+				rotation = "0 90 0"
+				material = "shader: standard; metalness: 0.5; color: #000">
+			</a-entity>
+			<a-entity
+				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
+				position = "12 7.5 0"
+				rotation = "0 90 0"
+				material = "shader: standard; metalness: 0.5; color: #000">
+			</a-entity>
+			<a-entity
+				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
+				position = "12 7.5 5"
+				rotation = "0 90 0"
+				material = "shader: standard; metalness: 0.5; color: #000">
+			</a-entity>
+			<a-entity
+				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
+				position = "12 7.5 10"
+				rotation = "0 90 0"
+				material = "shader: standard; metalness: 0.5; color: #000">
+			</a-entity>
+			<a-entity
+				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
+				position = "12 7.5 15"
+				rotation = "0 90 0"
+				material = "shader: standard; metalness: 0.5; color: #000">
+			</a-entity>
+
 
 		<!-- Pillars Left -->
 			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 12; width: 1"
-				position = "-10.8 6 -5"
+				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
+				position = "-12 7.5 -15"
 				rotation = "0 90 0"
 				material = "shader: standard; metalness: 0.5; color: #000">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 12; width: 1"
-				position = "-10.8 6 0"
+				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
+				position = "-12 7.5 -10"
 				rotation = "0 90 0"
 				material = "shader: standard; metalness: 0.5; color: #000">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 12; width: 1"
-				position = "-10.8 6 5"
+				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
+				position = "-12 7.5 -5"
 				rotation = "0 90 0"
 				material = "shader: standard; metalness: 0.5; color: #000">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 12; width: 1"
-				position = "-10.8 6 10"
-				rotation = "0 90 0"
-				material = "shader: standard; metalness: 0.5; color: #000">
-			</a-entity>
-
-		<!-- Pillars Right -->
-			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 12; width: 1"
-				position = "10.8 6 -5"
+				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
+				position = "-12 7.5 0"
 				rotation = "0 90 0"
 				material = "shader: standard; metalness: 0.5; color: #000">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 12; width: 1"
-				position = "10.8 6 0"
+				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
+				position = "-12 7.5 5"
 				rotation = "0 90 0"
 				material = "shader: standard; metalness: 0.5; color: #000">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 12; width: 1"
-				position = "10.8 6 5"
+				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
+				position = "-12 7.5 10"
 				rotation = "0 90 0"
 				material = "shader: standard; metalness: 0.5; color: #000">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 12; width: 1"
-				position = "10.8 6 10"
+				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
+				position = "-12 7.5 15"
 				rotation = "0 90 0"
 				material = "shader: standard; metalness: 0.5; color: #000">
 			</a-entity>
 
-		<!--Stools -->
+
+		<!-- Right Stools -->
 			<a-entity
-				geometry = "primitive: cylinder; radius: 0.3; height: 0.75"
-				position = "10.7 9 -2.5"
+				geometry = "primitive: cylinder; radius: 0.5; height: 0.75"
+				position = "12 10 -7.5"
 				open-ended = "false"
 				material = "shader: standard; metalness: 0.5; color: #26030d">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: cylinder; radius: 0.3; height: 0.75"
-				position = "10.7 9 2.5"
+				geometry = "primitive: cylinder; radius: 0.5; height: 0.75"
+				position = "12 10 -2.5"
 				open-ended = "false"
 				material = "shader: standard; metalness: 0.5; color: #26030d">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: cylinder; radius: 0.3; height: 0.75"
-				position = "10.7 9 7.5"
+				geometry = "primitive: cylinder; radius: 0.5; height: 0.75"
+				position = "12 10 2.5"
 				open-ended = "false"
 				material = "shader: standard; metalness: 0.5; color: #26030d">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: cylinder; radius: 0.3; height: 0.75"
-				position = "-10.7 9 -2.5"
+				geometry = "primitive: cylinder; radius: 0.5; height: 0.75"
+				position = "12 10 7.5"
+				open-ended = "false"
+				material = "shader: standard; metalness: 0.5; color: #26030d">
+			</a-entity>
+
+		<!-- Left Stools -->
+			<a-entity
+				geometry = "primitive: cylinder; radius: 0.5; height: 0.75"
+				position = "-12 10 -7.5"
 				open-ended = "false"
 				material = "shader: standard; metalness: 0.5; color: #26030d">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: cylinder; radius: 0.3; height: 0.75"
-				position = "-10.7 9 2.5"
+				geometry = "primitive: cylinder; radius: 0.5; height: 0.75"
+				position = "-12 10 -2.5"
 				open-ended = "false"
 				material = "shader: standard; metalness: 0.5; color: #26030d">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: cylinder; radius: 0.3; height: 0.75"
-				position = "-10.7 9 7.5"
+				geometry = "primitive: cylinder; radius: 0.5; height: 0.75"
+				position = "-12 10 2.5"
 				open-ended = "false"
 				material = "shader: standard; metalness: 0.5; color: #26030d">
 			</a-entity>
+			<a-entity
+				geometry = "primitive: cylinder; radius: 0.5; height: 0.75"
+				position = "-12 10 7.5"
+				open-ended = "false"
+				material = "shader: standard; metalness: 0.5; color: #26030d">
+			</a-entity>
+
 
 		<!-- Speakers -->
 			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 1; width: 0.7"
-				position = "10.5 9 -7.5"
+				geometry = "primitive: box; depth: .75; height: 1.25; width: 1"
+				position = "12 10 -12.5"
 				rotation = "-10 90 0"
 				material = "shader: standard; roughness: 0.7; color: #000">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 1; width: 0.7"
-				position = "-10.5 9 -7.5"
-				rotation = "10 90 0"
-				material = "shader: standard; roughness: 0.7; color: #000">
-			</a-entity>
-			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 1; width: 0.7"
-				position = "10.5 9 12"
+				geometry = "primitive: box; depth: .75; height: 1.25; width: 1"
+				position = "12 10 12.5"
 				rotation = "-10 90 0"
 				material = "shader: standard; roughness: 0.7; color: #000">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: box; depth: 0.5; height: 1; width: 0.7"
-				position = "-10.5 9 12"
-				rotation = "10 90 0"
+				geometry = "primitive: box; depth: .75; height: 1.25; width: 1"
+				position = "-12 10 -12.5"
+				rotation = "-10 90 0"
 				material = "shader: standard; roughness: 0.7; color: #000">
 			</a-entity>
+			<a-entity
+				geometry = "primitive: box; depth: .75; height: 1.25; width: 1"
+				position = "-12 10 12.5"
+				rotation = "-10 90 0"
+				material = "shader: standard; roughness: 0.7; color: #000">
+			</a-entity>
+
+
 
 		<!-- Other -->
 			<a-model
@@ -212,33 +271,33 @@
 				 material = "color:#FFF">
 			</a-model>
 			<a-entity
-				geometry = "primitive: plane; height: 2; width: 1"
-				position = "5 1 13.93"
+				geometry = "primitive: plane; height: 5; width: 2"
+				position = "5 1 14.925"
 				material = "shader: flat; side: back; transparent: true; src: url(images/door.png)">
 			</a-entity>
 			<a-entity
-				geometry = " primitive: plane; height: 0.5; width: 0.6"
-				position = "5 3 13.93"
+				geometry = " primitive: plane; height: 1; width: 1.5"
+				position = "5 4.25 14.925"
 				material = "shader: flat; side: back; transparent: true; src: url(images/exit-sign.png)">
 			</a-entity>
 			<a-entity
-				geometry = "primitive: box; depth: 2; height: 16; width: 18"
-				position = "0 5 -9.1"
-				material = "shader: standard; color: #000">
+				geometry = "primitive: box; depth: .5; height: 12.5; width: 20.5"
+				position = "0 7.5 -14.5"
+				material = "shader: standard; color: #8c9787">
 			</a-entity>
 			<a-video
 				src = "videos/Countdown.mp4"
 				autoplay = "true"
-				width = "19"
-				height = "11"
-				position = "0 5 -8">
+				width = "19.5"
+				height = "11.5"
+				position = "0 7.5 -14.2">
 			</a-video>
 
-		<!-- Lighting and background -->
+		<!-- Lighting -->
 			<a-sky
 				color = "#ffffff">
 			</a-sky>
-			
+	
 		</a-scene>
 	</body>
 </html>
