@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>1JRMT BSCS2A | VR Countdown</title>
+		<title>JRMT BSCS2A | VR Countdown</title>
 		<meta 	charset = "utf-8">
 		<meta 	name = "Author"
 			content = "Donovan Kraeker">
@@ -36,25 +36,26 @@
 			</a-entity>
 
 
-		<!-- Front Walls -->
+		<!-- Front Wall -->
 			<a-entity
 				geometry = "primitive: box; depth: 0.1; height: 15; width: 25"
 				position = "0 7.5 -15"
 				material = "shader: standard; metalness: 0.5; color: #111111">
 			</a-entity>
-		<!-- Back Walls -->
+		<!-- Back Wall -->
 			<a-entity
 				geometry = "primitive: box; depth: 0.1; height: 15; width: 25"
 				position = "0 7.5 15"
 				material = "shader: standard; metalness: 0.5; color: #111111">
 			</a-entity>
-		<!-- Side Walls -->
+		<!-- Right Wall -->
 			<a-entity
 				geometry = "primitive: box; depth: 0.05; height: 15; width: 30"
 				position = "12.5 7.5 0"
 				rotation = "0 90 0"
 				material = "shader: standard; roughness: 1; src: url(images/wall.jpg)">
 			</a-entity>
+		<!-- Left Wall -->
 			<a-entity
 				geometry = "primitive: box; depth: 0.05; height: 15; width: 30"
 				position = "-12.5 7.5 0"
@@ -95,7 +96,8 @@
 				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
 				position = "12 7.5 -15"
 				rotation = "0 90 0"
-				material = "shader: standard; metalness: 0.5; color: #111111">
+				material = "shader: standard; metalness: 0.5; color: #111111"
+				light = "type: point; color: #fff; intensity: 1.5">
 			</a-entity>
 			<a-entity
 				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
@@ -113,7 +115,8 @@
 				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
 				position = "12 7.5 0"
 				rotation = "0 90 0"
-				material = "shader: standard; metalness: 0.5; color: #111111">
+				material = "shader: standard; metalness: 0.5; color: #111111"
+				light = "type: point; color: #fff; intensity: 1.5">
 			</a-entity>
 			<a-entity
 				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
@@ -131,7 +134,8 @@
 				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
 				position = "12 7.5 15"
 				rotation = "0 90 0"
-				material = "shader: standard; metalness: 0.5; color: #111111">
+				material = "shader: standard; metalness: 0.5; color: #111111"
+				light = "type: point; color: #fff; intensity: 1.5">
 			</a-entity>
 
 
@@ -140,7 +144,8 @@
 				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
 				position = "-12 7.5 -15"
 				rotation = "0 90 0"
-				material = "shader: standard; metalness: 0.5; color: #111111">
+				material = "shader: standard; metalness: 0.5; color: #111111"
+				light = "type: point; color: #fff; intensity: 1.5">
 			</a-entity>
 			<a-entity
 				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
@@ -158,7 +163,8 @@
 				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
 				position = "-12 7.5 0"
 				rotation = "0 90 0"
-				material = "shader: standard; metalness: 0.5; color: #111111">
+				material = "shader: standard; metalness: 0.5; color: #111111"
+				light = "type: point; color: #fff; intensity: 1.5">
 			</a-entity>
 			<a-entity
 				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
@@ -176,7 +182,8 @@
 				geometry = "primitive: box; depth: 1.1; height: 15; width: 1"
 				position = "-12 7.5 15"
 				rotation = "0 90 0"
-				material = "shader: standard; metalness: 0.5; color: #111111">
+				material = "shader: standard; metalness: 0.5; color: #111111"
+				light = "type: point; color: #fff; intensity: 1.5">
 			</a-entity>
 
 
@@ -290,18 +297,19 @@
 			<a-entity
 				geometry = "primitive: box; depth: .5; height: 12.5; width: 20.5"
 				position = "0 7.5 -14.5"
-				material = "shader: flat; color: #111111">
+				material = "shader: flat; color: #111111"
+				light = "type: point; color: #fff; intensity: 1.5">
 			</a-entity>
 			
 			<a-video
 				src = "videos/Countdown.mp4"
 				autoplay = "true"
-				geometry = "primitive:plane; width:19; height:11"
+				geometry = "primitive:plane; height: 11; width: 19"
 				position = "0 7.5 -14.2"
 				material = "color:#FFF; shader:flat; side:double; transparent:true; src:url(videos/Countdown.mp4)">
 			</a-video>
 			
-		<!-- Lighting -->
+		<!-- Lighting
 			<a-entity
 				light = "type: point; color: #fff; intensity: 0.1"
 				position = "12 10 5">
@@ -326,6 +334,7 @@
 				light = "type: point; color: #fff; intensity: 0.1"
 				position = "-12 10 -5">
 			</a-entity>
+		//-->
 		</a-scene>
 	</body>
 </html>
