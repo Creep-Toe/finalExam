@@ -13,6 +13,13 @@
 
 	<body>
 		<a-scene>
+			<a-assets>
+				<a-mixin id="light"
+					 geometry="primitive: sphere; radius: 1.5"
+					 material="color: #FFF; shader: flat"
+					 light="color: #DDDDFF; distance: 120; intensity: 2; type: point">
+				</a-mixin>
+			</a-assets>
 			<a-entity
 				camera position = "0 2 5"
 				look-controls = "enabled: true"
