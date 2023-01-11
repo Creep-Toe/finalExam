@@ -282,7 +282,8 @@
 				 position = "0 0.35 2.5"
 				 rotation = "0 90 0"
 				 loader = "format:collada; src:url(models/sofa.dae)"
-				 material = "color:#FFF">
+				 material = "color:#FFF"
+				 light = "type: point; color: #fff; intensity: 0.1">
 			</a-model>
 			<a-entity
 				geometry = "primitive: plane; height: 5; width: 2.25"
@@ -297,7 +298,7 @@
 			<a-entity
 				geometry = "primitive: box; depth: .5; height: 12.5; width: 20.5"
 				position = "0 7.5 -14.5"
-				material = "shader: standard; color: #111111">
+				material = "shader: flat; color: #111111">
 			</a-entity>
 			
 			<a-video
